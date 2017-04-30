@@ -1,0 +1,38 @@
+%!PS-Adobe-3.0
+%%LanguageLevel: 2
+%%Creator: (Gmart)
+%%CreationDate: (April 30, 2017)
+%%EndComments
+
+% OMG This was pain trying to figure this out.
+% Finally I found this:
+% http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/postscript/pdfs/5116.DCT_Filter.pdf
+% and for a change, a useful example was provided!
+% Before you embed the JPEG, you need to know its width and height.
+% From the terminal, type identify <nameofjpg.jpg>
+% Make a note of the width and height
+% Using nano, edit this file and replace the value 1400 with the width of your file
+% Same story, replace 365 with your height. Careful: width appears twice, and height three times.
+% You can keep, edit or get rid of the line that reads 126 270 translate. Translate sets the starting point for displaying the image.
+% You should know that in postscript, 0, 0 refers to the bottom left corner, and increasing the Y value moves UP...this is different than most systems
+% If you leave our the X Y translate line, the image will be printed below the bottom of the page (ie. invisible). So at a minimum, you should provide a positive Y value.
+% Apparently, you need the scale line, but you can set it to be the same as the values for the width and height of your image. No idea why that is needed.
+% Using nano, move your cursor one character (exactly) after where it reads "exec" on the last line of this file
+% Press CTRL+R
+% type in the name of the JPEG to include, the press ENTER
+% Press CTRL+X to save and exit.
+% From the terminal, type ps2pdf PRE-JPEGEmbedded.ps Results.pdf
+% With any luck, it will work!
+
+/DeviceRGB setcolorspace
+126 270 translate
+349 252 scale
+{ /Data currentfile /DCTDecode filter def
+<< /ImageType 1
+/Width 256
+/Height 170
+/ImageMatrix [1400 0 0 -365 0 365]
+/DataSource Data
+/BitsPerComponent 8
+/Decode [0 1 0 1 0 1]
+>> image showpage } exec 
