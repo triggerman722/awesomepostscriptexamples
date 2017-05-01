@@ -13,9 +13,9 @@ Before you embed the JPEG, you need to know its width and height.
 - Same story, replace 365 with your height. Careful: width appears twice, and height three times.
 - You can keep, edit or get rid of the line that reads `126 270 translate`. Translate sets the starting point for displaying the image.
 - You should know that in postscript, 0, 0 refers to the bottom left corner, and increasing the Y value moves UP...this is different than most systems
-- If you leave our the X Y translate line, the image will be printed below the bottom of the page (ie. invisible). So at a minimum, you should provide a positive Y value.
+- If you leave out the X Y translate line, the image will be printed below the bottom of the page (ie. invisible). So at a minimum, you should provide a positive Y value.
 - Same thing, keep, edit or delete `349 252 scale`, but apparently some sort of scaling is necessary, so you may want to just replace the values with the width and height of your image.
-- Using nano, move your cursor one character (exactly) after where it reads `exec` on the last line of this file
+- Using nano, move your cursor one character (exactly) after where it reads `exec` on the last line of the file PRE-JPEGEmbedded.ps
 - Press <kbd>CTRL</kbd>+<kbd>R</kbd>
 - type in the name of the JPEG to include, the press <kbd>ENTER</kbd>
 - Press <kbd>CTRL</kbd>+<kbd>X</kbd> to save and exit.
