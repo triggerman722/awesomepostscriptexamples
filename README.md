@@ -1,5 +1,5 @@
 # awesomepostscriptexamples
-Awesome examples of how to do things in postscript. Postscript is both awesomane and terrible at the same time. Although there is example content out there, I'd adding stuff here that I found difficult in the hope that it is useful down the road.
+Awesome examples of how to do things in postscript. Postscript is both awesomane and terrible at the same time. Although there is example content out there, I'm adding stuff here that I found difficult in the hope that it is useful down the road.
 
 ## Table of contents
 - [Quick start](#quick-start)
@@ -39,11 +39,11 @@ Have a bug or a feature request? Please [search](https://github.com/triggerman72
 ## Key Resources
 
 You will definitely need the various coloured books ([Blue](https://www-cdf.fnal.gov/offline/PostScript/BLUEBOOK.PDF), Red, Green) from Adobe.
-[Technical Note #5116](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/postscript/pdfs/5116.DCT_Filter.pdf)
-[Examples from the Blue Book](https://atrey.karlin.mff.cuni.cz/~milanek/PostScript/Examples/blue_book/)
-[Some almost helpful Stackoverflow content](http://stackoverflow.com/questions/15167454/how-include-img-in-postscript)
-[Postscript Language Reference](http://partners.adobe.com/public/developer/en/ps/PLRM.pdf)
-[An interesting class project](http://www.cs.utsa.edu/~wagner/CS3723/postrecs/rec12.1.html)
+- [Technical Note #5116](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/postscript/pdfs/5116.DCT_Filter.pdf)
+- [Examples from the Blue Book](https://atrey.karlin.mff.cuni.cz/~milanek/PostScript/Examples/blue_book/)
+- [Some almost helpful Stackoverflow content](http://stackoverflow.com/questions/15167454/how-include-img-in-postscript)
+- [Postscript Language Reference](http://partners.adobe.com/public/developer/en/ps/PLRM.pdf)
+- [An interesting class project](http://www.cs.utsa.edu/~wagner/CS3723/postrecs/rec12.1.html)
 
 ## Creators
 
